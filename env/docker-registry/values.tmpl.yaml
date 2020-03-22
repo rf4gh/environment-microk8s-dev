@@ -1,4 +1,4 @@
-{{- if eq .Requirements.webhook "jenkins" }}
+{{- if or (eq .Requirements.webhook "jenkins") (eq .Requirements.webhook "lighthouse") }}
 enabled: true
 {{- else }}
 enabled: false

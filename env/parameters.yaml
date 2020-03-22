@@ -1,0 +1,10 @@
+adminUser:
+  password: local:microk8s/adminUser:password
+  username: admin
+enableDocker: false
+pipelineUser:
+  email: rf4gh@nowhere.com
+  token: local:microk8s/pipelineUser:token
+  username: rf4gh
+prow:
+  hmacToken: local:microk8s/prow:hmacToken
